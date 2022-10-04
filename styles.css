@@ -1,0 +1,253 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #be3144;
+    width: 100%;
+    border-bottom: 2px solid #303841;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list li {
+    margin-left: 2rem;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #303841;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frog {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: happyfrog 5s ease-out infinite;
+}
+
+.frog * {
+    position: absolute;
+}
+
+.frog-head {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(68, 180, 68);
+    top: 25%;
+    left: 15%;
+    border-radius: 30% 60% 30% 60%;
+    transform: rotate(120deg);
+}
+
+.eyelid {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(68, 180, 68);
+    border-radius: 50%;
+}
+
+.eyelid.left {
+    top: 70%;
+    left: 20%;
+}
+
+.eyelid.right {
+    top: 30%;
+    left: -15%;
+}
+
+.sclera {
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sclera.left {
+    top: 5%;
+    left: 7%;
+}
+
+.sclera.right {
+    top: 5%;
+    left: 7%;
+}
+
+.pupil {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(37, 36, 36);
+    border-radius: 50%;
+}
+
+.pupil.left {
+    top: 10%;
+    left: 10%;
+}
+
+.pupil.right {
+    top: 10%;
+    left: 10%;
+}
+
+.reflection {
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.reflection.left {
+    top: 40%;
+}
+
+.reflection.right {
+    top: 40%;
+}
+
+.nose {
+    width: 4%;
+    height: 10%;
+    background-color: #303841;
+    border-radius: 30%;
+    transform: rotate(35deg);
+}
+
+.nose.left {
+    top: 55%;
+    left: 50%;
+}
+
+.nose.right {
+    top: 45%;
+    left: 40%;
+}
+
+.mouth {
+    width: 50%;
+    height: 15%;
+    background-color: #303841;
+    border-radius: 90% 90% 40% 40%;
+    top: 25%;
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+.lips {
+    width: 100%;
+    height: 90%;
+    background-color: rgb(68, 180, 68);
+    border-radius: 50%;
+    top: 30%;
+    left: -7%;
+}
+
+@keyframes happyfrog {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(24deg);
+    }
+}
+
+#welcome-section h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: -1.5rem;
+}
+
+#welcome-section p {
+    color: rgb(192, 97, 97);
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* Projects Section */
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #45567d;
+    padding-top: 6rem;
+}
+
+#projects h2 {
+    width: 40rem;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 0.2rem solid white;
+}
+
+.grid-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.project {
+    background-color: #303841;
+    border-radius: 7px;
+    width: 400px;
+    height: 400px;
+}
+
+.project-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.project-tile {
+    text-align: center;
+}
+
+.project-tile span:hover::before {
+    content: "< ";
+    color: orangered;
+}
+
+.project-tile span:hover::after {
+    content: " />";
+    color: orangered;
+}
