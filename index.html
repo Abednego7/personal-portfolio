@@ -11,101 +11,118 @@
 </head>
 
 <body>
-    <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="welcome-section">
-        <div class="frog">
-            <div class="frog-head">
-                <div class="eyelid left">
-                    <div class="sclera left">
-                        <div class="pupil left">
-                            <div class="reflection left"></div>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <div class="frog">
+                <div class="frog-head">
+                    <div class="eyelid left">
+                        <div class="sclera left">
+                            <div class="pupil left">
+                                <div class="reflection left"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="eyelid right">
-                    <div class="sclera right">
-                        <div class="pupil right">
-                            <div class="reflection right"></div>
+                    <div class="eyelid right">
+                        <div class="sclera right">
+                            <div class="pupil right">
+                                <div class="reflection right"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="nose left"></div>
-                <div class="nose right"></div>
-                <div class="mouth">
-                    <div class="lips"></div>
+                    <div class="nose left"></div>
+                    <div class="nose right"></div>
+                    <div class="mouth">
+                        <div class="lips"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h1>Hey I am Isaac</h1>
-        <p>a web developer</p>
-    </section>
-    <section id="projects">
-        <h2>These are some of my projects</h2>
-        <div class="grid-projects">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page">
-                <p class="project-tile">
-                    <span>Tribute Page</span>
-                </p>
-            </a>
+            <h1>Hey I am Isaac</h1>
+            <p>a web developer</p>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>These are some of my projects</h2>
+            <div class="project-grid">
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page"
+                        loading="lazy">
+                    <p class="project-tile"><span>Tribute Page</span></p>
+                </a>
 
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                        alt="Random Quote Machine" loading="lazy">
+                    <p class="project-tile"><span>Random Quote Machine</span></p>
+                </a>
 
-            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                    alt="Random Quote Machine">
-                <p class="project-tile">
-                    <span>Random Quote Machine</span>
-                </p>
-            </a>
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                        alt="JavaScript Calculator" loading="lazy">
+                    <p class="project-tile"><span>JavaScript Calculator</span></p>
+                </a>
 
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                        alt="Map Data Across the Globe" loading="lazy">
+                    <p class="project-tile"><span>Map Data Across the Globe</span></p>
+                </a>
 
-            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                    alt="JavaScript Calculator">
-                <p class="project-tile">
-                    <span>JavaScript Calculator</span>
-                </p>
-            </a>
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer"
+                        loading="lazy">
+                    <p class="project-tile"><span>Wikipedia Viewer</span></p>
+                </a>
 
+                <a class="project" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                        alt="Tic Tac Toe Game" loading="lazy">
+                    <p class="project-tile"><span>Tic Tac Toe Game</span></p>
+                </a>
+            </div>
+            <div class="btn">
+                <a href="https://codepen.io/FreeCodeCamp/" class="btn-show-all" target="_blank">Show all ></a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-header">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div class="contact-link">
+                <a id="profile-link" href="https://github.com/Abednego7" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
 
-            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-                    alt="Map Data Across the Globe">
-                <p class="project-tile">
-                    <span>Map Data Across the Globe</span>
-                </p>
-            </a>
+                <a id="profile-link" href="mailto:example@gmail.com" target="_blank">
+                    <i class="fas fa-at"></i>
+                    Gmail
+                </a>
 
-
-            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer">
-                <p class="project-tile">
-                    <span>Wikipedia Viewer</span>
-                </p>
-            </a>
-
-
-            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project">
-                <img loading="lazy" class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-                    alt="Tic Tac Toe Game">
-                <p class="project-tile">
-                    <span>Tic Tac Toe Game</span>
-                </p>
-            </a>
-        </div>
-    </section>
+                <a id="profile-link" href="tel:555-555-555" target="_blank">
+                    <i class="fas fa-mobile-alt"></i>
+                    Call me
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>**Project created for practice purposes developed in FreeCodeCamp</p>
+            <p>© Created for freeCodeCamp
+                <a href="https://www.freecodecamp.org/" target="_blank">
+                    <i class="fab fa-free-code-camp"></i>
+                </a>
+            </p>
+        </footer>
+    </main>
 </body>
 
 </html>
